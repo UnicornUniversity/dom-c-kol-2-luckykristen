@@ -4,7 +4,7 @@
 Zadání úkolu je [zde](https://github.com/UnicornUniversity/BSDE-DS-Assignment2/blob/master/BSDE%202025%20Summer%20Zad%C3%A1n%C3%AD%20dom%C3%A1c%C3%AD%20%C3%BAkol%20_%20homework%20assignment%2002.pdf).
 
 **Pro odevzdání je nutné úkol odevzdat**: 
-1) Kód sem na GitHub
+1) Kód sem na GitHub;
 2) Na Plus4U přes tlačítko odevzdat
 
 **Poznámky k úkolu:**
