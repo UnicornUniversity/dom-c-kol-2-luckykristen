@@ -15,15 +15,22 @@ export function main(inputNumber, inputNumberSystem, outputNumberSystem) {
   if (inputNumberSystem === outputNumberSystem) {
     throw new Error("Input and output number systems must be different.");
   }
-  
+
   let dtoOut = exMain(inputNumber, inputNumberSystem, outputNumberSystem);
   return dtoOut;
 }
 
+/**
+ * Helper function for conversion.
+ */
 export function exMain(inputNumber, inputNumberSystem, outputNumberSystem) {
   let decimal = toDecimal(inputNumber, inputNumberSystem);
   return fromDecimal(decimal, outputNumberSystem);
 }
+
+/**
+ * Converts number from given base to decimal.
+ */
 
 function toDecimal(inputNumber, inputNumberSystem) {
   let result = 0;
@@ -38,6 +45,9 @@ function toDecimal(inputNumber, inputNumberSystem) {
   return result;
 }
 
+/**
+ * Converts decimal number to target base.
+ */
 function fromDecimal(number, base) {
   if (number === 0) return "0";
 
