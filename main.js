@@ -38,6 +38,11 @@ function toDecimal(inputNumber, inputNumberSystem) {
 
   for (let i = inputNumber.length - 1; i >= 0; i--) {
     let digit = Number(inputNumber[i]);
+
+    if (digit >= inputNumberSystem) {
+      throw new Error("Invalid digit for this base");
+    }
+    
     result += digit * Math.pow(inputNumberSystem, power);
     power++;
   }
