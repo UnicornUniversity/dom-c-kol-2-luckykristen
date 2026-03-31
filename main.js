@@ -13,7 +13,7 @@
  */
 export function main(inputNumber, inputNumberSystem, outputNumberSystem) {
   if (inputNumberSystem === outputNumberSystem) {
-    throw new Error("Input and output number systems must be different.");
+    return inputNumber;
   }
 
   let dtoOut = exMain(inputNumber, inputNumberSystem, outputNumberSystem);
@@ -39,10 +39,6 @@ function toDecimal(inputNumber, inputNumberSystem) {
   for (let i = inputNumber.length - 1; i >= 0; i--) {
     let digit = Number(inputNumber[i]);
 
-    if (digit >= inputNumberSystem) {
-      throw new Error("Invalid digit for this base");
-    }
-    
     result += digit * Math.pow(inputNumberSystem, power);
     power++;
   }
